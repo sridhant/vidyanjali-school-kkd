@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+header nav {
+  background-color: #801cff;
+  color: white;
+  width: 100vw;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .logo {
+  width: 30%;
+}
+
+header nav .logo img {
+  height: 10vh;
+}
+
+header nav .leftSideNav {
+  width: 50%;
+}
+
+header nav .leftSideNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+header nav .leftSideNav ul a {
+  text-decoration: none;
+}
+
+header nav .leftSideNav ul li {
+  list-style-type: none;
+  color: white;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+header nav .hamburger {
+  display: none;
+}
+
+header .bg {
+  width: 100vw;
+  height: 88vh;
+  background-color: #801cff;
+}
+
+header .bg .illustration {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0% 5%;
+}
+
+header .bg .illustration .textArea h1 {
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5rem;
+  line-height: 10rem;
+  color: #f5f5f5;
+  text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .bg .illustration .textArea h4 {
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #f5f5f5;
+}
+
+header .bg .illustration .textArea .status {
+  padding: 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .bg .illustration .hero {
+  width: 40vw;
+  height: 80vh;
+  background: url(../img/illustration.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 200px) and (max-width: 930px) {
+  header nav {
+    border: none;
+    border: 5px solid #801cff;
+  }
+  header nav .leftSideNav {
+    display: none;
+  }
+  header nav .hamburger {
+    display: block;
+    width: 20%;
+    height: 100%;
+    padding: 0% -10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .hamburger img {
+    width: 50%;
+  }
+  header .bg {
+    height: 95vh;
+    z-index: 5;
+    border: 5px solid #801cff;
+  }
+  header .bg .illustration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .bg .illustration .textArea h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  header .bg .illustration .textArea h4 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+  header .bg .illustration .textArea .status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0%;
+  }
+  header .bg .illustration .hero {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+/*# sourceMappingURL=index.css.map */
