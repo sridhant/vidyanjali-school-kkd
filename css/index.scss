@@ -13,8 +13,10 @@ html {
 
 //variables
 $themeColor: #801cff;
+$secoundaryColor: #ff1cb2;
 
 header {
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -90,15 +92,15 @@ header {
           color: #f5f5f5;
         }
 
-        .status{
-          padding: 5% 5%;
+        .status {
+          padding: 5% 0%;
           display: flex;
           justify-content: flex-start;
           align-items: center;
         }
       }
 
-      .hero{
+      .hero {
         width: 40vw;
         height: 80vh;
         background: url(../img/illustration.svg);
@@ -110,21 +112,104 @@ header {
       }
     }
   }
+
+}
+
+.aboutUs {
+  height: 100vh;
+  width: 100vw;
+  background-color: $secoundaryColor;
+  overflow: hidden;
+  background-attachment: fixed;
+  .bg {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    .aboutImg {
+      height: 70%;
+      background: url(../img/aboutIllu.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-top: 5%;
+    }
+    .aboutText {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      h1 {
+        font-family: Fredoka One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6rem;
+        line-height: 10rem;
+        text-align: left;
+        color: #ffffff;
+        text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+      }
+      h4 {
+        font-family: Fredoka One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        color: #ffffff;
+      }
+      .status {
+        padding: 5% 0%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.floating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 7rem;
+  width: 7rem;
+  color: #f5f5f5;
+  background-color: #01937c;
+  border-radius: 50%;
+  position: fixed;
+  right: 5rem;
+  top: 55rem;
+  transition: .1s ease-in-out;
+  &:hover{
+    color: #f5f5f5;
+  }
+  &:active{
+    color: #f5f5f5;
+    background-color: #02b89b;
+  }
 }
 
 //mobile
-@media screen and (min-width : 200px) and (max-width : 930px) {
-  header{
-    nav{
+@media screen and (min-width: 200px) and (max-width: 930px) {
+  
+  .floating{
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 100% - 20%;
+    right: 3rem;
+  }
+ 
+  header {
+    nav {
       border: none;
       border: 5px solid $themeColor;
-      .logo{}
+      .logo {
+      }
 
-      .leftSideNav{
+      .leftSideNav {
         display: none;
       }
 
-      .hamburger{
+      .hamburger {
         display: block;
         width: 20%;
         height: 100%;
@@ -132,36 +217,36 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+        img {
           width: 50%;
         }
       }
     }
 
-    .bg{
+    .bg {
       height: 95vh;
       z-index: 5;
       border: 5px solid $themeColor;
-      .illustration{
+      .illustration {
         flex-direction: column-reverse;
-        .textArea{
-          h1{
+        .textArea {
+          h1 {
             font-size: 4rem;
             text-align: center;
           }
-          h4{
+          h4 {
             font-size: 2rem;
             text-align: center;
             line-height: 3rem;
           }
-          .status{
+          .status {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 5% 0%;    
+            padding: 5% 0%;
           }
         }
-        .hero{
+        .hero {
           width: 100vw;
           height: 40vh;
           background: url(../android/illustration.svg);
@@ -171,5 +256,41 @@ header {
       }
     }
   }
-}
 
+  .aboutUs {
+    .bg {
+      .aboutImg {
+        height: 35%;
+        background: url(../android/aboutIllu.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        margin-top: auto;
+      }
+      .aboutText {
+        h1 {
+          font-family: Fredoka One;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 4.5rem;
+          line-height: 8rem;
+          text-align: center;
+        }
+        h4 {
+          font-family: Fredoka One;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 2rem;
+          line-height: 3rem;
+          text-align: center;
+          color: #ffffff;
+        }
+        .status {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5% 0%;
+        }
+      }
+    }
+  }
+}

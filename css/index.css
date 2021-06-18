@@ -12,6 +12,7 @@ html {
 }
 
 header {
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
@@ -110,7 +111,7 @@ header .bg .illustration .textArea h4 {
 }
 
 header .bg .illustration .textArea .status {
-  padding: 5% 5%;
+  padding: 5% 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +140,111 @@ header .bg .illustration .hero {
           align-items: center;
 }
 
+.aboutUs {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ff1cb2;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.aboutUs .bg {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.aboutUs .bg .aboutImg {
+  height: 70%;
+  background: url(../img/aboutIllu.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 5%;
+}
+
+.aboutUs .bg .aboutText {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.aboutUs .bg .aboutText h1 {
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6rem;
+  line-height: 10rem;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutUs .bg .aboutText h4 {
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 4.5rem;
+  color: #ffffff;
+}
+
+.aboutUs .bg .aboutText .status {
+  padding: 5% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.floating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 7rem;
+  width: 7rem;
+  color: #f5f5f5;
+  background-color: #01937c;
+  border-radius: 50%;
+  position: fixed;
+  right: 5rem;
+  top: 55rem;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.floating:hover {
+  color: #f5f5f5;
+}
+
+.floating:active {
+  color: #f5f5f5;
+  background-color: #02b89b;
+}
+
 @media screen and (min-width: 200px) and (max-width: 930px) {
+  .floating {
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 80%;
+    right: 3rem;
+  }
   header nav {
     border: none;
     border: 5px solid #801cff;
@@ -203,6 +308,42 @@ header .bg .illustration .hero {
     background: url(../android/illustration.svg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+  }
+  .aboutUs .bg .aboutImg {
+    height: 35%;
+    background: url(../android/aboutIllu.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: auto;
+  }
+  .aboutUs .bg .aboutText h1 {
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 8rem;
+    text-align: center;
+  }
+  .aboutUs .bg .aboutText h4 {
+    font-family: Fredoka One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #ffffff;
+  }
+  .aboutUs .bg .aboutText .status {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 0%;
   }
 }
 /*# sourceMappingURL=index.css.map */
